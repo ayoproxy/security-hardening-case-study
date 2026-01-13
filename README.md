@@ -25,7 +25,17 @@ The initial assessment of the platform revealed critical vulnerabilities common 
 ---
 
 ## 🛡️ Defense Strategy (Blue Team)
-
+### 🌐 Security Architecture
+```mermaid
+graph TD
+    User[User / Attacker] -->|HTTPS| CF[Cloudflare WAF]
+    CF -->|Filtered Traffic| FW[Server Firewall / .htaccess]
+    FW -->|Clean Requests| App[PHP Application]
+    App -->|PDO Prepared Stmt| DB[(Database)]
+    
+    style CF fill:#f96,stroke:#333,stroke-width:2px
+    style FW fill:#ff9,stroke:#333,stroke-width:2px
+    style DB fill:#9f9,stroke:#333,stroke-width:2px
 ### 1. Server & Network Layer
 * **WAF Implementation:** Deployed **Cloudflare** to mask the origin IP and mitigate DDoS attacks.
 * **Custom Firewall (.htaccess):** Engineered strict Apache/LiteSpeed rules to block malicious query strings and aggressive User Agents.
