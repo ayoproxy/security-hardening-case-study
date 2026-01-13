@@ -70,7 +70,7 @@ Attempted to automate database injection on the `blog_post.php` endpoint.
 ### 1. The "Clean" Scan Result
 *Nikto scan showing no critical errors and secure headers present.*
 ![Nikto Clean Scan](screenshots/nikto_clean_scan.png)
-*(Note: Upload your screenshot to a 'screenshots' folder and name it 'nikto_clean_scan.png')*
+
 
 ### 2. Attack Blocked
 *SQLMap log showing 403 Forbidden errors when attempting injection.*
@@ -87,5 +87,6 @@ Attempted to automate database injection on the `blog_post.php` endpoint.
 ---
 
 ### 📫 Contact
-I am open to Cybersecurity and Backend Engineering internships.
-[Link to my LinkedIn Profile]
+I am open to Cybersecurity and Backend Engineering internships/jobs.
+[[Link to my LinkedIn Profile]    
+](https://www.linkedin.com/in/anthony-ayodeji/)
